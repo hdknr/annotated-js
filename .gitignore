@@ -59,3 +59,15 @@ typings/
 
 # next.js build output
 .next
+
+# HelloElectronVue
+.DS_Store
+HelloElectronVue/dist/electron/*
+HelloElectronVue/dist/web/*
+HelloElectronVue/build/*
+!HelloElectronVue/build/icons
+coverage
+node_modules/
+npm-debug.log.*
+thumbs.db
+!.gitkeep

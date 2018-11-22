@@ -1,5 +1,9 @@
 # electron-vue
 
+~~~bash 
+$ npm install -g vue-cli
+~~~
+
 ## Hello
 
 初期化:
