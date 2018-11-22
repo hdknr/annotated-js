@@ -2,14 +2,14 @@
 
 process.env.NODE_ENV = 'production'
 
-const { say } = require('cfonts')
-const chalk = require('chalk')
-const del = require('del')
-const { spawn } = require('child_process')
-const webpack = require('webpack')
-const Multispinner = require('multispinner')
+const { say } = require('cfonts')             // https://www.npmjs.com/package/cfonts
+const chalk = require('chalk')                // https://www.npmjs.com/package/chalk
+const del = require('del')                    // https://www.npmjs.com/package/del
+const { spawn } = require('child_process')    // https://nodejs.org/api/child_process.html
+const webpack = require('webpack')            // https://www.npmjs.com/package/webpack
+const Multispinner = require('multispinner')  // https://www.npmjs.com/package/multispinner
 
-
+// 3つ(メインプロセス、レンダラプロセス, Webサーバー実行)の Webpack設定を読み込む
 const mainConfig = require('./webpack.main.config')
 const rendererConfig = require('./webpack.renderer.config')
 const webConfig = require('./webpack.web.config')
@@ -19,9 +19,10 @@ const errorLog = chalk.bgRed.white(' ERROR ') + ' '
 const okayLog = chalk.bgBlue.white(' OKAY ') + ' '
 const isCI = process.env.CI || false
 
+// Mainの処理: 処理を切り替える(clean, web, build)
 if (process.env.BUILD_TARGET === 'clean') clean()
 else if (process.env.BUILD_TARGET === 'web') web()
-else build()
+else build()                                          // 指定がなければビルド
 
 function clean () {
   del.sync(['build/*', '!build/icons', '!build/icons/icon.*'])
@@ -34,7 +35,7 @@ function build () {
 
   del.sync(['dist/electron/*', '!.gitkeep'])
 
-  const tasks = ['main', 'renderer']
+  const tasks = ['main', 'renderer']        // メインとレンダラのビルドを行います
   const m = new Multispinner(tasks, {
     preText: 'building',
     postText: 'process'
@@ -42,13 +43,15 @@ function build () {
 
   let results = ''
 
+  // 成功した時のメッセージ表示
   m.on('success', () => {
     process.stdout.write('\x1B[2J\x1B[0f')
     console.log(`\n\n${results}`)
     console.log(`${okayLog}take it away ${chalk.yellow('`electron-builder`')}\n`)
     process.exit()
   })
-
+ 
+  // メインプロセスJSのビルドを行います
   pack(mainConfig).then(result => {
     results += result + '\n\n'
     m.success('main')
@@ -59,6 +62,7 @@ function build () {
     process.exit(1)
   })
 
+  // レンダラプロセスJSのビルドを行います
   pack(rendererConfig).then(result => {
     results += result + '\n\n'
     m.success('renderer')
@@ -70,6 +74,7 @@ function build () {
   })
 }
 
+// 指定されたWebpack設定でWebpackを実行します
 function pack (config) {
   return new Promise((resolve, reject) => {
     config.mode = 'production'
@@ -98,6 +103,7 @@ function pack (config) {
   })
 }
 
+// Webサーバープロセスを実行します
 function web () {
   del.sync(['dist/web/*', '!.gitkeep'])
   webConfig.mode = 'production'
