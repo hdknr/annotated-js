@@ -1,12 +1,13 @@
+// メインプロセスJSのビルド
 'use strict'
 
 process.env.BABEL_ENV = 'main'
 
-const path = require('path')
+const path = require('path')                                    // https://nodejs.org/api/path.html
 const { dependencies } = require('../package.json')
-const webpack = require('webpack')
+const webpack = require('webpack')                              // https://www.npmjs.com/package/webpack
 
-const BabiliWebpackPlugin = require('babili-webpack-plugin')
+const BabiliWebpackPlugin = require('babili-webpack-plugin')    // https://www.npmjs.com/package/babili-webpack-plugin
 
 let mainConfig = {
   entry: {
@@ -24,7 +25,7 @@ let mainConfig = {
         use: {
           loader: 'eslint-loader',
           options: {
-            formatter: require('eslint-friendly-formatter')
+            formatter: require('eslint-friendly-formatter')     // https://www.npmjs.com/package/eslint-friendly-formatter
           }
         }
       },
