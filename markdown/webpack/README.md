@@ -84,3 +84,4 @@ Done in 2.44s.
 - 「CSSや画像を含むあらゆるアセットファイルをJavaScriptとして出力する」ことが基本的な使い方
 - ECMAScript Modules(ES Modules/ESM)をサポート
 - [Tree Shaking](https://qiita.com/pirosikick/items/863830856891d40308cb)（未使用のモジュールを省いてバンドルする機能）が使える
+- [新人にドヤ顔で説明できるか、今風フロントエンド開発ハンズオン(Git/Node.js/ES6/webpack4/Babel7) - Qiita](https://qiita.com/riversun/items/29d5264480dd06c7b9fb)
