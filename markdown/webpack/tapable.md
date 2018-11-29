@@ -15,10 +15,9 @@ $ npm run unit
 - [webpack3から4に移行した時に出たエラーとやったこと | e-JOINT.jp](https://e-joint.jp/504/)
 - [railsでwebpackerを使用する際、Error: Chunk.entrypointsが出てハマった - Qiita](https://qiita.com/daikichi412/items/409fafe943e79718b765)
 
-
 インストールしてみたが消えない...:
 
-~~~bash 
+~~~bash
 $ npm install --save-dev extract-text-webpack-plugin@4.0.0-beta.0
 
 npm WARN karma-webpack@3.0.5 requires a peer of webpack@^2.0.0 || ^3.0.0 but none is installed. You must install peer dependencies yourself.
@@ -30,8 +29,7 @@ updated 1 package in 11.988s
 [+] no known vulnerabilities found [18423 packages audited]
 ~~~
 
-
-~~~bash 
+~~~bash
 $ npm outdated
 
 Package                           Current        Wanted   Latest  Location
@@ -58,7 +56,7 @@ vue-router                          3.0.1         3.0.2    3.0.2  helloev
 webpack                            4.26.0        4.26.1   4.26.1  helloev
 ~~~
 
-~~~bash 
+~~~bash
 $ npm update
 
 npm WARN karma-webpack@3.0.5 requires a peer of webpack@^2.0.0 || ^3.0.0 but none is installed. You must install peer dependencies yourself.
@@ -94,4 +92,37 @@ file-loader                        1.1.11        1.1.11   2.0.0  helloev
 mini-css-extract-plugin             0.4.0         0.4.0   0.4.5  helloev
 spectron                            3.8.0         3.8.0   5.0.0  helloev
 style-loader                       0.21.0        0.21.0  0.23.1  helloev
+~~~
+
+## karma-webpack の問題 では
+
+- [DeprecationWarning: Tapable.plugin is deprecated · Issue #3 · davidwallacejackson/vue-cli-plugin-unit-karma](https://github.com/davidwallacejackson/vue-cli-plugin-unit-karma/issues/3)
+- [Webpack 4: DeprecationWarning: Tapable.plugin is deprecated. Use new API on `.hooks` instead · Issue #320 · webpack-contrib/karma-webpack](https://github.com/webpack-contrib/karma-webpack/issues/320)
+
+
+~~~bash 
+$ npm list 
+....
+npm ERR! peer dep missing: webpack@^2.0.0 || ^3.0.0, required by karma-webpack@3.0.5
+~~~
+
+~~~bash 
+$ npm i -D karma-webpack@next
+npm WARN helloev@0.0.1 No repository field.
+npm WARN helloev@0.0.1 No license field.
+
++ karma-webpack@4.0.0-rc.4
+removed 10 packages, updated 3 packages and audited 18383 packages in 13.8s
+found 0 vulnerabilities
+~~~
+
+これでOKです:
+
+~~~bash 
+$ npm run unit
+
+> helloev@0.0.1 unit /Users/hide/Documents/Tech/annotated-js/samples/HelloElectronVue
+> karma start test/unit/karma.conf.js
+
+⚠ ｢wdm｣: Hash: 6632461ad1100442a0f1
 ~~~
