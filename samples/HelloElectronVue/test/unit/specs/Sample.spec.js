@@ -7,9 +7,18 @@
 // Webpack Middleware: https://github.com/webpack-contrib/karma-webpack
 // Karma Launcher and Preprocessor: https://github.com/twolfson/karma-electron
 
+import fs from 'fs'
+import os from 'os'
+
 describe('Karma Sample Case', () => {
   it('equal test', () => {
     const flag = true
+    expect(flag).equal(true)
+  })
+
+  it('check a folder', () => {
+    const home = os.homedir
+    const flag = fs.existsSync(`${home}/Downloads`)
     expect(flag).equal(true)
   })
 })
