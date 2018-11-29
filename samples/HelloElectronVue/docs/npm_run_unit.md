@@ -49,10 +49,15 @@ Entrypoint index = index.js
 [36] ./test/unit/specs/LandingPage.spec.js 628 bytes {0} [optional] [built]
 [40] ./src/renderer sync ^\.\/(?!main(\.js)?$) 653 bytes {0} [built]
     + 61 hidden modules
+~~~
 
+~~~bash
 WARNING in configuration
 The 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
 You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/concepts/mode/
+~~~
+
+~~~bash
 Child html-webpack-plugin for "index.html":
                                    Asset      Size  Chunks             Chunk Names
     a2e358e91969f8db1d72.hot-update.json  44 bytes          [emitted]
@@ -66,6 +71,9 @@ Child html-webpack-plugin for "index.html":
 29 11 2018 10:08:49.446:INFO [launcher]: Launching browsers visibleElectron with concurrency unlimited
 29 11 2018 10:08:49.480:INFO [launcher]: Starting browser Electron
 29 11 2018 10:08:50.802:INFO [Electron 2.0.14 (Node 8.9.3)]: Connected on socket 3dE5fVoHGFHVFsBXAAAA with id 23010263
+~~~
+
+~~~bash
 ERROR LOG: '[Vue warn]: Error in data(): "TypeError: Cannot read property 'name' of undefined"
 
 found in
@@ -73,6 +81,9 @@ found in
 ---> <SystemInformation> at src/renderer/components/LandingPage/SystemInformation.vue
        <LandingPage> at src/renderer/components/LandingPage.vue
          <Root>'
+~~~
+
+~~~bash
 ERROR LOG: TypeError: Cannot read property 'name' of undefined
 TypeError: Cannot read property 'name' of undefined
     at a.data (http://localhost:9876/base/index.js?7f08b31b19552640d89a4feacf267a173ca0480d:7:119964)
@@ -85,6 +96,9 @@ TypeError: Cannot read property 'name' of undefined
     at init (http://localhost:9876/base/index.js?7f08b31b19552640d89a4feacf267a173ca0480d:7:29441)
     at http://localhost:9876/base/index.js?7f08b31b19552640d89a4feacf267a173ca0480d:7:62313
     at h (http://localhost:9876/base/index.js?7f08b31b19552640d89a4feacf267a173ca0480d:7:62580)
+~~~
+
+~~~bash
 ERROR LOG: '[Vue warn]: Property or method "path" is not defined on the instance but referenced during render. Make sure that this property is reactive, either in the data option, or for class-based components, by initializing the property. See: https://vuejs.org/v2/guide/reactivity.html#Declaring-Reactive-Properties.
 
 found in
@@ -92,6 +106,9 @@ found in
 ---> <SystemInformation> at src/renderer/components/LandingPage/SystemInformation.vue
        <LandingPage> at src/renderer/components/LandingPage.vue
          <Root>'
+~~~
+
+~~~bash
 ERROR LOG: '[Vue warn]: Property or method "name" is not defined on the instance but referenced during render. Make sure that this property is reactive, either in the data option, or for class-based components, by initializing the property. See: https://vuejs.org/v2/guide/reactivity.html#Declaring-Reactive-Properties.
 
 found in
@@ -99,6 +116,9 @@ found in
 ---> <SystemInformation> at src/renderer/components/LandingPage/SystemInformation.vue
        <LandingPage> at src/renderer/components/LandingPage.vue
          <Root>'
+~~~
+
+~~~bash
 ERROR LOG: '[Vue warn]: Property or method "vue" is not defined on the instance but referenced during render. Make sure that this property is reactive, either in the data option, or for class-based components, by initializing the property. See: https://vuejs.org/v2/guide/reactivity.html#Declaring-Reactive-Properties.
 
 found in
@@ -106,6 +126,9 @@ found in
 ---> <SystemInformation> at src/renderer/components/LandingPage/SystemInformation.vue
        <LandingPage> at src/renderer/components/LandingPage.vue
          <Root>'
+~~~
+
+~~~bash
 ERROR LOG: '[Vue warn]: Property or method "electron" is not defined on the instance but referenced during render. Make sure that this property is reactive, either in the data option, or for class-based components, by initializing the property. See: https://vuejs.org/v2/guide/reactivity.html#Declaring-Reactive-Properties.
 
 found in
@@ -113,6 +136,9 @@ found in
 ---> <SystemInformation> at src/renderer/components/LandingPage/SystemInformation.vue
        <LandingPage> at src/renderer/components/LandingPage.vue
          <Root>'
+~~~
+
+~~~bash
 ERROR LOG: '[Vue warn]: Property or method "node" is not defined on the instance but referenced during render. Make sure that this property is reactive, either in the data option, or for class-based components, by initializing the property. See: https://vuejs.org/v2/guide/reactivity.html#Declaring-Reactive-Properties.
 
 found in
@@ -120,6 +146,9 @@ found in
 ---> <SystemInformation> at src/renderer/components/LandingPage/SystemInformation.vue
        <LandingPage> at src/renderer/components/LandingPage.vue
          <Root>'
+~~~
+
+~~~bash
 ERROR LOG: '[Vue warn]: Property or method "platform" is not defined on the instance but referenced during render. Make sure that this property is reactive, either in the data option, or for class-based components, by initializing the property. See: https://vuejs.org/v2/guide/reactivity.html#Declaring-Reactive-Properties.
 
 found in
@@ -127,7 +156,9 @@ found in
 ---> <SystemInformation> at src/renderer/components/LandingPage/SystemInformation.vue
        <LandingPage> at src/renderer/components/LandingPage.vue
          <Root>'
+~~~
 
+~~~bash
   LandingPage.vue
     ✓ should render correct contents
 
