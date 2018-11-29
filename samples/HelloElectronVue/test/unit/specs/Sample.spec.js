@@ -21,4 +21,13 @@ describe('Karma Sample Case', () => {
     const flag = fs.existsSync(`${home}/Downloads`)
     expect(flag).equal(true)
   })
+
+  it('json serialization', () => {
+    const obj = {name: 'hello', runner: 'karma'}
+    const path = `${os.homedir}/Downloads/obj.json`
+    fs.writeFileSync(path, JSON.stringify(obj))
+    const obj2 = JSON.parse(fs.readFileSync(path))
+    expect(obj.name).equal(obj2.name)
+    expect(obj.runner).equal(obj2.runner)
+  })
 })

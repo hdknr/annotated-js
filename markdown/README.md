@@ -23,11 +23,7 @@
 - [bower](bower.md)
 - [grunt](grunt.md)
 - [gulp](gulp.md)
-
-## TEST
-
-- [karma](karma.md)
-- [jest](jest.md)
+- [テスト](testing)
 
 ## UI
 
