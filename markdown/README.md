@@ -12,6 +12,12 @@
 - [文字列](lang/js.string.md)
 - [ES6/ECMAScript6](es6.md)
 
+関連:
+
+- [Babel](babel.md)
+- [TypeScript](typescript) (AltJS)
+- [WebAssembly](wasm.md)
+
 ## REST
 
 - [axios](./axios)
@@ -24,6 +30,7 @@
 - [grunt](grunt.md)
 - [gulp](gulp.md)
 - [テスト](testing)
+
 
 ## UI
 
