@@ -10,6 +10,7 @@
 - [配列](lang/js.array.md) / [underscore.js](underscore)
 - [日時](lang/js.datetime.md) (`moment.js`)
 - [文字列](lang/js.string.md)
+- [ES6/ECMAScript6](es6.md)
 
 ## REST
 
