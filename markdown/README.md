@@ -26,9 +26,7 @@
 ## Tools
 
 - [npm](npm.md)
-- [bower](bower.md)
-- [grunt](grunt.md)
-- [gulp](gulp.md)
+- [npx](npx.md)
 - [テスト](testing)
 
 
@@ -45,3 +43,9 @@
 - [sass](https://sass-lang.com/)
 - [sylus](http://stylus-lang.com/)
 - [vue.js Scoped CSS](https://vue-loader.vuejs.org/ja/features/scoped-css.html)
+
+## その他
+
+- [bower](bower.md)
+- [grunt](grunt.md)
+- [gulp](gulp.md)
