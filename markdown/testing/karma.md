@@ -1,4 +1,4 @@
-# karma
+# karma : テストランナー
 
 ## Electron
 
@@ -10,3 +10,8 @@
 - Reporter: https://github.com/mlex/karma-spec-reporter
 - Webpack Middleware: https://github.com/webpack-contrib/karma-webpack
 - Karma Launcher and Preprocessor: https://github.com/twolfson/karma-electron
+
+
+## async
+
+- [Unit Testing Async Calls and Promises with Jasmine – DailyJS – Medium](https://medium.com/dailyjs/unit-testing-async-calls-and-promises-with-jasmine-a20a5d7f051e)
