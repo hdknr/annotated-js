@@ -44,6 +44,8 @@ $ ./node_modules/.bin/electron-rebuild
 ## Windows
 
 - [Unable to install keytar on windows 10 node 6.9, npm 4.3 · Issue #61 · atom/node-keytar](https://github.com/atom/node-keytar/issues/61)
+- [Windowsでnpm installしてnode-gypでつまずいた時対処方法 - Qiita](https://qiita.com/AkihiroTakamura/items/25ba516f8ec624e66ee7)
+
 
 管理コンソール(`WindowsKey + X`):
 

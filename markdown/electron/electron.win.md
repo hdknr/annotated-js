@@ -221,3 +221,68 @@ C:\Users\hdknr\Documents\proj\app>HelloElectron-win32\HelloElectron.exe
 C:\Users\hdknr\Documents\proj\app>[9820:0611/081626:ERROR:crash_reporter_win.cc(70)] Cannot initialize out-of-process crash handler
 [5048:0611/081626:INFO:renderer_main.cc(200)] Renderer process started
 ~~~
+
+##  "Extension server error: Operation failed: : has no execution context",
+
+~~~
+
+┏ Electron -------------------
+
+  [11364:1228/114517.022:ERROR:CONSOLE(7574)] "Extension server error: Operation failed: : has no execution context", source: chrome-devtools://devtools/bundled/inspector.js (7574)
+
+┗ ----------------------------
+~~~
+
+~~~bash
+c:>npm install electron-devtools-installer --save-dev
+
+npm WARN streetboard@0.0.1 No repository field.
+npm WARN streetboard@0.0.1 No license field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ electron-devtools-installer@2.2.4
+updated 1 package and audited 18799 packages in 12.098s
+found 0 vulnerabilities
+~~~
+
+- https://chocolatey.org/packages/nodejs/10.15.0
+- choco upgrade nodejs で 11.6.0 で動くは動いた
+
+##  A dynamic link library (DLL) initialization routine failed. 
+
+
+
+┏ Electron -------------------
+
+  Error: A dynamic link library (DLL) initialization routine failed.
+  \\?\C:\Users\spin\Documents\Projects\streetboard\node_modules\keytar\build\Release\keytar.node
+      at process.module.(anonymous function) [as dlopen] (ELECTRON_ASAR.js:166:20)
+      at Object.Module._extensions..node (module.js:671:18)
+      at Object.module.(anonymous function) [as .node] (ELECTRON_ASAR.js:166:20)
+      at Module.load (module.js:561:32)
+      at tryModuleLoad (module.js:504:12)
+      at Function.Module._load (module.js:496:3)
+      at Module.require (module.js:586:17)
+      at require (internal/module.js:11:18)
+      at Object.<anonymous> (C:\Users\spin\Documents\Projects\streetboard\node_modules\keytar\lib\keytar.js:1:169)
+      at Object.<anonymous> (C:\Users\spin\Documents\Projects\streetboard\node_modules\keytar\lib\keytar.js:61:3)
+
+┗ ----------------------------
+
+Terminate batch job (Y/N)?
+Terminate batch job (Y/N)? y
+
+C:\Users\spin\Documents\Projects\streetboard>npm install --save-dev electron-rebuild
+npm WARN streetboard@0.0.1 No repository field.
+npm WARN streetboard@0.0.1 No license field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ electron-rebuild@1.8.2
+updated 2 packages and audited 18799 packages in 11.63s
+found 0 vulnerabilities
+
+
+C:\Users\spin\Documents\Projects\streetboard>node_modules\.bin\electron-rebuild
+√ Rebuild Complete

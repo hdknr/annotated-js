@@ -1,5 +1,7 @@
 # electron-vue
 
+- https://simulatedgreg.gitbooks.io/electron-vue/ja/
+
 ~~~bash 
 $ npm install -g vue-cli
 ~~~
