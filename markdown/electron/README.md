@@ -1,6 +1,7 @@
-# Electron (#97)
+# Electron (#1)
 
 - [Tutorial | Electron](https://electronjs.org/docs/tutorial)
+- [Essential Electron : Electronの簡潔・平易な概要 - POSTD](https://postd.cc/essential-electron/)
 
 ## Topic
 
@@ -27,6 +28,11 @@
 - [Electronでアプリ内部にWebサーバーを立てる - Qiita](https://qiita.com/pman-taichi/items/406b6eb068e074dc6675)
 - [node.js - Why do I see an "Electron Security Warning" after updating my Electron project to the latest version? - Stack Overflow](https://stackoverflow.com/questions/48854265/why-do-i-see-an-electron-security-warning-after-updating-my-electron-project-t)
 - [ElectronでExpressアプリケーションを動かす - dackdive's blog](https://dackdive.hateblo.jp/entry/2016/02/20/213251)
+
+## デプロイ
+
+- [Electronで展示物用アプリケーションを作る際のテクニックまとめ - Qiita](https://qiita.com/kgsi/items/075775de7ed574481242)
+
 
 ## 記事
 

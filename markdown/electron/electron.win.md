@@ -1,4 +1,6 @@
 
+# Electron Winddows
+
 - [HelloElectron.app for OSX](http://qiita.com/hidelafoglia/items/5279f4f60a2f6d762f99)
 
 ## nodejs インストール
@@ -249,10 +251,9 @@ found 0 vulnerabilities
 - https://chocolatey.org/packages/nodejs/10.15.0
 - choco upgrade nodejs で 11.6.0 で動くは動いた
 
-##  A dynamic link library (DLL) initialization routine failed. 
+## A dynamic link library (DLL) initialization routine failed.
 
-
-
+~~~
 ┏ Electron -------------------
 
   Error: A dynamic link library (DLL) initialization routine failed.
@@ -286,3 +287,4 @@ found 0 vulnerabilities
 
 C:\Users\spin\Documents\Projects\streetboard>node_modules\.bin\electron-rebuild
 √ Rebuild Complete
+~~~
