@@ -38,7 +38,7 @@ Chocolatey installed 1/1 package(s). 0 package(s) failed.
 
 ### node のパス
 
- ~~~
+~~~
 
 C:\Users\hdknr\Documents>SET PATH=%PATH%;%PROGRAMFILES%\nodejs
 ~~~
