@@ -1,0 +1,19 @@
+<html>
+
+<body>
+  <ul>
+    <li id="serviceWorker"></li>
+    <li id="caches"></li>
+  </ul>
+  <h1 id="title"></h1>
+  <script>
+    if ('serviceWorker' in navigator){
+      document.querySelector('#serviceWorker').textContent = 'serviceWorker Ready';
+    }
+    if ('caches' in window){
+      document.querySelector('#caches').textContent = 'caches object Ready';
+    }
+  </script>
+</body>
+
+</html>
