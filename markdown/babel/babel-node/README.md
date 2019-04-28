@@ -45,7 +45,7 @@ console.log(fs.readdirSync('.'))
 ~~~
 
 ~~~bash
-$ $ npx babel-node index.js
+$ npx babel-node index.js
 
 [ '.babelrc',
   '.node-version',
