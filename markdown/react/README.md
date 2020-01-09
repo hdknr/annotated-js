@@ -1,4 +1,4 @@
-react
+# React
 
 - [5分で理解する React.js](http://qiita.com/tomzoh/items/7fabe7cb57dd96425867)
 - [React入門 - Part2: Browserify/Reactify/Gulpを使う](http://qiita.com/masato/items/35b0900e3a7282b33bf8)
