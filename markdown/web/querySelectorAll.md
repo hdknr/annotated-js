@@ -15,3 +15,16 @@
     });
   }
 ~~~
+
+## ナビゲーションの一覧
+
+~~~js
+const sections = Array.from(document.querySelectorAll('.nav .nav-item a')).map(
+    function (i, index) {
+      return {
+        anchor: i.dataset.href,   // <a data-href="#access">Access</a>
+        navi: i.parentElement,    // .nav-item 要素
+        offset: document.querySelector(i.dataset.href).offsetTop    // <a name="access"> のスクロール位置
+      };
+    }).reverse();   // 逆順にする
+~~~
