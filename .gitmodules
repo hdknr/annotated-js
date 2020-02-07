@@ -1,0 +1,3 @@
+[submodule "samples/gantt-elastic/gantt-elastic"]
+	path = samples/gantt-elastic/gantt-elastic
+	url = https://github.com/neuronetio/gantt-elastic.git
