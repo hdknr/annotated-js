@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  // useState: https://reactjs.org/docs/hooks-state.html
+  // 分割代入: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Array_destructuring
   const [count, setCount] = useState(0);
 
   return (
