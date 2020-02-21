@@ -43,3 +43,7 @@ Splitting.jsフロー
 ~~~
 
 ABCとしてみえるが、３つの文字にアニメーションをかけることができる
+
+## サンプル
+
+- [Hello World!](hellowword)
