@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <link rel='stylesheet' type='text/css' href="https://unpkg.com/splitting/dist/splitting.css">
+  <link rel='stylesheet' type='text/css' href="https://unpkg.com/splitting/dist/splitting-cells.css">
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Kanit:600);
+
+    html {
+      height: 100%;
+      display: flex;
+    }
+
+    body {
+      margin: auto;
+    }
+
+    html,
+    body {
+      background: #00043C;
+      color: #FFF;
+      font: normal 600 10vw/1.5 Kanit, sans-serif;
+    }
+  </style>
+
+  <style>
+    /* アニメーション*/
+    .splitting .char {
+      animation: slide-in 1s cubic-bezier(.5, 0, .5, 1) both;
+      animation-delay: calc(60ms * var(--char-index));
+    }
+
+    @keyframes slide-in {
+      from {
+        transform: translateY(-1em) rotate(-.5turn) scale(0.5);
+        opacity: 0;
+      }
+    }
+  </style>
+
+  <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+</head>
+
+<body>
+  <div data-splitting>Hello World!</div>
+  <script>
+    Splitting();
+  </script>
+</body>
+
+</html>
