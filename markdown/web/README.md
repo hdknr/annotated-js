@@ -12,6 +12,8 @@
 
 ## DOM
 
+- [Document](document.md)
+- [Element](element.md)
 - [ページのクエリを引き継ぐ](querySelectorAll.md)
 
 ## URLエンコード

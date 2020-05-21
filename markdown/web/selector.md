@@ -1,5 +1,6 @@
 # セレクター
 
+
 ## querySelectorAll
 
 - [現在のページのクエリを関連ページのアンカーに渡す](querySelectorAll.md)
