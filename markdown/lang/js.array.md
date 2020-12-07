@@ -123,3 +123,15 @@ undefined
 
 - [Javascript で python の range() みたいのを書いてみるメモ](http://cortyuming.hateblo.jp/entry/20131223/p2)
 - [JavaScript function similar to Python range()ll](http://stackoverflow.com/questions/8273047/javascript-function-similar-to-python-range/8273091#8273091)
+
+
+## スプレッド
+
+~~~js
+> const nums1 = [ 1, 2, 3 ];
+undefined
+> const nums2 = [ 4,5, 6];
+undefined
+> [...nums1, ...nums2]
+[ 1, 2, 3, 4, 5, 6 ]
+~~~
